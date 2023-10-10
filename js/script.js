@@ -15,6 +15,21 @@ let scores = [0 , 0];
 let playing = true;
 
 
+let nameChange= prompt('Want to set names for players? yes or no');
+    if(nameChange === 'yes'){
+        let    player1 = prompt('ENTER PLAYER 1 NAME');
+        let   player2 = prompt('ENTER PLAYER 2 NAME');
+        
+        document.querySelector('#name--0').textContent = player1;
+        document.querySelector('#name--1').textContent = player2;
+        
+    }    else{
+        document.querySelector('#name--0').textContent = 'Player1';
+        document.querySelector('#name--1').textContent = 'Player2';
+    }
+
+
+
 
 
 
